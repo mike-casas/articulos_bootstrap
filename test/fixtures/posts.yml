@@ -1,0 +1,33 @@
+# == Schema Information
+#
+# Table name: posts
+#
+#  id         :integer          not null, primary key
+#  titulo     :string(255)
+#  fecha      :date
+#  estado     :boolean
+#  texto      :text
+#  autor_id   :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+# Indexes
+#
+#  index_posts_on_autor_id  (autor_id)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  fecha: 2014-12-03
+  estado: false
+  texto: MyText
+  autor_id: 
+
+two:
+  titulo: MyString
+  fecha: 2014-12-03
+  estado: false
+  texto: MyText
+  autor_id: 

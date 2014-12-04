@@ -1,0 +1,11 @@
+<% if @post.errors.any? %>
+
+    $('#error_explanation').html("<%= j render 'errors' %>")
+ $('#error_explanation').show();
+
+
+ <%else %>
+
+  $('#notification').show();
+  $('#body-row').append("<%= j render 'bodyrow' %>")
+<% end %>
