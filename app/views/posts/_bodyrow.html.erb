@@ -1,4 +1,4 @@
-<tr>
+
   <td><%= @post.titulo %></td>
   <td><%= @post.fecha %></td>
   <td><%= @post.estado %></td>
@@ -7,4 +7,4 @@
   <td class="acciones"><%= link_to 'Mostrar', @post, class:"btn btn btn-info glyphicon glyphicon-pencil",type:'button', remote:true %></td>
   <td class="acciones"><%= link_to 'Editar', edit_post_path(@post), class:"btn btn btn-success glyphicon glyphicon-search",type:'button',remote:true%></td>
   <td class="acciones"><%= link_to 'Eliminar', @post, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-danger glyphicon glyphicon-trash",type:'button'%></td>
-</tr>
+

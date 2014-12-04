@@ -15,7 +15,7 @@
 
   <tbody id="body-row">
     <% @posts.each do |post| %>
-      <tr>
+      <tr id=<%= post.id%>>
         <td><%= post.titulo %></td>
         <td><%= post.fecha %></td>
         <td><%= post.estado %></td>

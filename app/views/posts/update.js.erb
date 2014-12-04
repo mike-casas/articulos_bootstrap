@@ -7,5 +7,5 @@
  <%else %>
 
   $('#notification').show();
-  $('#body-row').append("<tr><%= j render 'bodyrow' %></tr>")
+  $('#<%= @post.id%>').html("<%= j render 'bodyrow' %>")
 <% end %>

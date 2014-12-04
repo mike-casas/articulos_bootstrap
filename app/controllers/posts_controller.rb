@@ -22,7 +22,7 @@ class PostsController < ApplicationController
 
   def update
      @post= Post.update(params[:id],parametros)
-     redirect_to posts_path
+
   end
 
   def destroy
